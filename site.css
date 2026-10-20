@@ -204,7 +204,6 @@ table.tariff{ border-collapse:collapse; width:100%; min-width:680px; background:
 table.tariff th, table.tariff td{ padding:13px 16px; text-align:left; border-bottom:1px solid var(--line-light); white-space:nowrap; }
 table.tariff thead th{ background:var(--primary-deep); color:#fff; font-family:"Oswald",sans-serif; font-weight:500; font-size:0.9rem; text-transform:uppercase; letter-spacing:0.03em; }
 table.tariff tbody tr:last-child td{ border-bottom:none; }
-table.tariff tbody tr:nth-child(even){ background:color-mix(in srgb, var(--bg-deep) 35%, var(--surface)); }
 table.tariff td.num, table.tariff th.num{ font-family:"JetBrains Mono",monospace; font-variant-numeric:tabular-nums; color:var(--on-light); }
 table.tariff td.vname{ font-family:"Oswald",sans-serif; font-weight:500; color:var(--on-light); }
 .tariff-notes{ max-width:1080px; margin:18px auto 0; display:grid; gap:6px; font-size:0.85rem; color:var(--ink-soft); }
