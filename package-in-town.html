@@ -29,12 +29,13 @@
 
   <figure class="pkg-hero">
     <img src="adi-kumbeswarar.jpg" alt="Painted temple corridor at Adi Kumbeswarar Temple, Kumbakonam">
-    <figcaption class="pkg-hero-text">
-      <p class="eyebrow">0&ndash;2 km &middot; walkable</p>
-      <h1>Inside Kumbakonam town</h1>
-      <p>Sixteen shrines inside the town itself &mdash; the cluster around the Mahamaham tank that gives Kumbakonam its name. Easy to cover on foot once we drop you, or as a slow half-day loop by car.</p>
-    </figcaption>
   </figure>
+
+  <div class="pkg-hero-text">
+    <p class="eyebrow">0&ndash;2 km &middot; walkable</p>
+    <h1>Inside Kumbakonam town</h1>
+    <p>Sixteen shrines inside the town itself &mdash; the cluster around the Mahamaham tank that gives Kumbakonam its name. Easy to cover on foot once we drop you, or as a slow half-day loop by car.</p>
+  </div>
 
   <div class="pkg-stats">
     <div class="stat"><b class="mono">16</b><span>Temples in this circuit</span></div>
@@ -58,16 +59,7 @@
       <div class="temple-rows" id="mapped-rows"></div>
 
       <p class="unpinned-note">Also in this circuit, within the same town block (not yet individually pinned):</p>
-      <div class="chip-grid" style="margin-top:10px;">
-        <span class="chip">Ekambareswarar Temple</span>
-        <span class="chip">Gautameswarar Temple</span>
-        <span class="chip">Abimukeswarar Temple</span>
-        <span class="chip">Kambatta Viswanathar Temple</span>
-        <span class="chip">Banapureeswarar Temple</span>
-        <span class="chip">Kalahasteeswarar Temple</span>
-        <span class="chip">Kottai Koteeswarar Temple</span>
-        <span class="chip">Rajagopalaswamy Temple</span>
-      </div>
+      <p class="also-list">Ekambareswarar Temple, Gautameswarar Temple, Abimukeswarar Temple, Kambatta Viswanathar Temple, Banapureeswarar Temple, Kalahasteeswarar Temple, Kottai Koteeswarar Temple, Rajagopalaswamy Temple.</p>
     </div>
 
     <div class="pkg-cta">
@@ -110,7 +102,7 @@
   ];
   renderTempleMap("map", points);
   var rowsHtml = points.map(function(p, i){
-    return '<div class="temple-row"><span class="idx">' + (i+1) + '</span><span class="name">' + p.name + '</span>' +
+    return '<div class="temple-row"><span class="idx">' + (i+1) + '.</span><span class="name">' + p.name + '</span>' +
       (p.note ? '<span class="note">' + p.note + '</span>' : '') + '</div>';
   }).join("");
   document.getElementById("mapped-rows").innerHTML = rowsHtml;

@@ -29,12 +29,13 @@
 
   <figure class="pkg-hero">
     <img src="gangaikonda-front.jpg" alt="Brihadeeswara Temple tower and Nandi statue at Gangaikonda Cholapuram">
-    <figcaption class="pkg-hero-text">
-      <p class="eyebrow">20&ndash;60 km &middot; full-day trips</p>
-      <h1>Further afield</h1>
-      <p>Thirty-plus temples beyond the usual day trip, from the Chola capital at Gangaikonda Cholapuram to the temple towns around Thiruvarur. Each is its own full-day outing.</p>
-    </figcaption>
   </figure>
+
+  <div class="pkg-hero-text">
+    <p class="eyebrow">20&ndash;60 km &middot; full-day trips</p>
+    <h1>Further afield</h1>
+    <p>Thirty-plus temples beyond the usual day trip, from the Chola capital at Gangaikonda Cholapuram to the temple towns around Thiruvarur. Each is its own full-day outing.</p>
+  </div>
 
   <div class="pkg-stats">
     <div class="stat"><b class="mono">30+</b><span>Temples in this zone</span></div>
@@ -58,11 +59,7 @@
       <div class="temple-rows" id="mapped-rows"></div>
 
       <p class="unpinned-note">Also in this zone (not yet individually pinned):</p>
-      <div class="chip-grid" style="margin-top:10px;">
-        <span class="chip">Thiruvaimur Temple</span>
-        <span class="chip">Ganapathi Agraharam Vinayagar Temple</span>
-        <span class="chip">Enkan Murugan Temple</span>
-      </div>
+      <p class="also-list">Thiruvaimur Temple, Ganapathi Agraharam Vinayagar Temple, Enkan Murugan Temple.</p>
     </div>
 
     <div class="pkg-cta">
@@ -105,7 +102,7 @@
   ];
   renderTempleMap("map", points);
   var rowsHtml = points.map(function(p, i){
-    return '<div class="temple-row"><span class="idx">' + (i+1) + '</span><span class="name">' + p.name + '</span>' +
+    return '<div class="temple-row"><span class="idx">' + (i+1) + '.</span><span class="name">' + p.name + '</span>' +
       (p.note ? '<span class="note">' + p.note + '</span>' : '') + '</div>';
   }).join("");
   document.getElementById("mapped-rows").innerHTML = rowsHtml;

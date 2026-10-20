@@ -29,12 +29,13 @@
 
   <figure class="pkg-hero">
     <img src="oppiliappan.jpg" alt="Oppiliappan Temple gopuram tower at dusk, Thiruvinnagar">
-    <figcaption class="pkg-hero-text">
-      <p class="eyebrow">&le;15 km &middot; Vaishnavite circuit</p>
-      <h1>108 Divya Desams nearby</h1>
-      <p>Ten of the 108 Divya Desams &mdash; the Vishnu temples sung by the Alvar poet-saints &mdash; sit within 15&nbsp;km of Kumbakonam. Several, like Oppiliappan and Nachiyar Koil, are known by more than one name in the old hymns.</p>
-    </figcaption>
   </figure>
+
+  <div class="pkg-hero-text">
+    <p class="eyebrow">&le;15 km &middot; Vaishnavite circuit</p>
+    <h1>108 Divya Desams nearby</h1>
+    <p>Ten of the 108 Divya Desams &mdash; the Vishnu temples sung by the Alvar poet-saints &mdash; sit within 15&nbsp;km of Kumbakonam. Several, like Oppiliappan and Nachiyar Koil, are known by more than one name in the old hymns.</p>
+  </div>
 
   <div class="pkg-stats">
     <div class="stat"><b class="mono">10</b><span>Divya Desams in this circuit</span></div>
@@ -58,9 +59,7 @@
       <div class="temple-rows" id="mapped-rows"></div>
 
       <p class="unpinned-note">Also in this circuit (not yet individually pinned):</p>
-      <div class="chip-grid" style="margin-top:10px;">
-        <span class="chip">Thirukkannangudi Temple</span>
-      </div>
+      <p class="also-list">Thirukkannangudi Temple.</p>
     </div>
 
     <div class="pkg-cta">
@@ -104,7 +103,7 @@
   ];
   renderTempleMap("map", points);
   var rowsHtml = points.map(function(p, i){
-    return '<div class="temple-row"><span class="idx">' + (i+1) + '</span><span class="name">' + p.name + '</span>' +
+    return '<div class="temple-row"><span class="idx">' + (i+1) + '.</span><span class="name">' + p.name + '</span>' +
       (p.note ? '<span class="note">' + p.note + '</span>' : '') + '</div>';
   }).join("");
   document.getElementById("mapped-rows").innerHTML = rowsHtml;

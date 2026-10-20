@@ -29,12 +29,13 @@
 
   <figure class="pkg-hero">
     <img src="thirunageswaram.jpg" alt="Silhouette of the Naganathar Temple gopuram at Thirunageswaram at sunset">
-    <figcaption class="pkg-hero-text">
-      <p class="eyebrow">6&ndash;60 km &middot; our most-booked package</p>
-      <h1>Navagraha &mdash; the nine planets</h1>
-      <p>Kumbakonam sits at the centre of the Navagraha belt. We run all nine shrines as a single full-day A/C trip, visited in the traditional Sun-to-Ketu order.</p>
-    </figcaption>
   </figure>
+
+  <div class="pkg-hero-text">
+    <p class="eyebrow">6&ndash;60 km &middot; our most-booked package</p>
+    <h1>Navagraha &mdash; the nine planets</h1>
+    <p>Kumbakonam sits at the centre of the Navagraha belt. We run all nine shrines as a single full-day A/C trip, visited in the traditional Sun-to-Ketu order.</p>
+  </div>
 
   <div class="pkg-stats">
     <div class="stat"><b class="mono">9</b><span>Temples, Sun to Ketu</span></div>
@@ -58,9 +59,7 @@
       <div class="temple-rows" id="mapped-rows"></div>
 
       <p class="unpinned-note">Also in this circuit (not yet individually pinned):</p>
-      <div class="chip-grid" style="margin-top:10px;">
-        <span class="chip">Naganathaswamy Temple, Keezhaperumpallam <span class="note">Ketu &middot; 60 km</span></span>
-      </div>
+      <p class="also-list">Naganathaswamy Temple, Keezhaperumpallam (Ketu &middot; 60 km).</p>
     </div>
 
     <div class="pkg-cta">
@@ -103,7 +102,7 @@
   ];
   renderTempleMap("map", points);
   var rowsHtml = points.map(function(p, i){
-    return '<div class="temple-row"><span class="idx">' + (i+1) + '</span><span class="name">' + p.name + '</span>' +
+    return '<div class="temple-row"><span class="idx">' + (i+1) + '.</span><span class="name">' + p.name + '</span>' +
       (p.note ? '<span class="note">' + p.note + '</span>' : '') + '</div>';
   }).join("");
   document.getElementById("mapped-rows").innerHTML = rowsHtml;

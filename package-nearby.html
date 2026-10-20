@@ -29,12 +29,13 @@
 
   <figure class="pkg-hero">
     <img src="darasuram-panorama.jpg" alt="Airavatesvara Temple complex at Darasuram, pale stone courtyard">
-    <figcaption class="pkg-hero-text">
-      <p class="eyebrow">3&ndash;10 km &middot; half-day run</p>
-      <h1>Very nearby &mdash; the essentials</h1>
-      <p>The eight temples most first-time visitors ask for, including the UNESCO-listed Airavatesvara Temple and two of the 108 Divya Desams. All comfortably done in one half day.</p>
-    </figcaption>
   </figure>
+
+  <div class="pkg-hero-text">
+    <p class="eyebrow">3&ndash;10 km &middot; half-day run</p>
+    <h1>Very nearby &mdash; the essentials</h1>
+    <p>The eight temples most first-time visitors ask for, including the UNESCO-listed Airavatesvara Temple and two of the 108 Divya Desams. All comfortably done in one half day.</p>
+  </div>
 
   <div class="pkg-stats">
     <div class="stat"><b class="mono">8</b><span>Temples in this circuit</span></div>
@@ -58,9 +59,7 @@
       <div class="temple-rows" id="mapped-rows"></div>
 
       <p class="unpinned-note">Also in this circuit (not yet individually pinned):</p>
-      <div class="chip-grid" style="margin-top:10px;">
-        <span class="chip">Thirubuvanam Sarabeswarar &amp; Kampahareswarar Temple</span>
-      </div>
+      <p class="also-list">Thirubuvanam Sarabeswarar &amp; Kampahareswarar Temple.</p>
     </div>
 
     <div class="pkg-cta">
@@ -102,7 +101,7 @@
   ];
   renderTempleMap("map", points);
   var rowsHtml = points.map(function(p, i){
-    return '<div class="temple-row"><span class="idx">' + (i+1) + '</span><span class="name">' + p.name + '</span>' +
+    return '<div class="temple-row"><span class="idx">' + (i+1) + '.</span><span class="name">' + p.name + '</span>' +
       (p.note ? '<span class="note">' + p.note + '</span>' : '') + '</div>';
   }).join("");
   document.getElementById("mapped-rows").innerHTML = rowsHtml;
