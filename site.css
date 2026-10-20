@@ -210,7 +210,7 @@ table.tariff td.vname{ font-family:"Oswald",sans-serif; font-weight:500; color:v
 .tariff-notes .mono{ color:var(--gold-soft); }
 @media (max-width:640px){
   .table-scroll{ overflow-x:visible; border:none; }
-  table.tariff{ min-width:0; display:block; width:100%; }
+  table.tariff{ min-width:0; display:block; width:100%; background:transparent; }
   table.tariff thead{ position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); }
   table.tariff tbody{ display:flex; flex-direction:column; gap:12px; }
   table.tariff tr{ display:block; background:var(--surface); border:1px solid var(--line-light); border-radius:12px; padding:14px 16px; }
