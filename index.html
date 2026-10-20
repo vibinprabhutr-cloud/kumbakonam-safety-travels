@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kumbakonam Safety Travels</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Work+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+Tamil:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header class="site">
+  <a class="brand-link" href="index.html">
+    <div class="brand">
+      <span class="logo-plate"><img src="logo.jpeg" alt="Kumbakonam Safety Travels logo"></span>
+      <span class="brand-text">Temple-town taxi &amp; tour service</span>
+    </div>
+  </a>
+  <a class="header-call mono" href="tel:+919443563062">+91 94435 63062</a>
+</header>
+
+<main>
+  <section class="hero">
+    <div>
+      <p class="eyebrow">Kumbakonam &middot; Thanjavur District, Tamil Nadu</p>
+      <h1>75+ temples around Kumbakonam.<br><em>One driver who knows every road.</em></h1>
+      <p class="tamil-line">பாதுகாப்பான பயணம், நம்பகமான வழிகாட்டி.</p>
+      <p class="lede">From the Adi Kumbeswarar sanctum to the Navagraha circuit 60&nbsp;km out, we run the full temple map around Kumbakonam &mdash; fixed fares, A/C cars, and drivers who've made these runs for years.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#booking">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Book now
+        </a>
+        <a class="btn btn-ghost" href="https://wa.me/919443563062?text=Vanakkam%2C%20I%27d%20like%20to%20book%20a%20temple%20tour%20taxi" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          WhatsApp
+        </a>
+        <a class="btn btn-ghost" href="https://g.page/r/CbF5g-I5_sX_EBM/review" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          Google Reviews
+        </a>
+      </div>
+      <div class="stat-row">
+        <div class="stat"><b class="mono">75+</b><span>Temples, 50&nbsp;km radius</span></div>
+        <div class="stat"><b class="mono">9</b><span>Navagraha shrines</span></div>
+        <div class="stat"><b class="mono">7</b><span>Vehicle types</span></div>
+        <div class="stat"><b class="mono">1</b><span>Fixed, upfront fare</span></div>
+      </div>
+    </div>
+    <div class="gopuram-wrap">
+      <img src="gopurams-skyline.jpg" alt="Sarangapani Temple's twin gopuram towers in Kumbakonam" loading="lazy">
+    </div>
+  </section>
+
+  <section class="booking-section" id="booking">
+    <div class="booking-grid">
+      <div>
+        <p class="eyebrow">Book your trip</p>
+        <h2>Tell us the temples, we'll handle the road.</h2>
+        <p style="color:var(--ink-soft); margin-top:8px;">Fill this in and we'll call to confirm your vehicle and fare &mdash; or just ring us directly.</p>
+        <form id="booking-form" class="form-card" autocomplete="on">
+          <input class="honey" type="text" name="_honey" tabindex="-1" autocomplete="off">
+          <input type="hidden" name="_subject" value="New booking request - Kumbakonam Safety Travels">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <div class="form-grid">
+            <div class="field">
+              <label for="bf-name">Full name</label>
+              <input id="bf-name" name="Name" type="text" required>
+            </div>
+            <div class="field">
+              <label for="bf-phone">Phone number</label>
+              <input id="bf-phone" name="Phone" type="tel" inputmode="tel" required>
+            </div>
+            <div class="field">
+              <label for="bf-date">Travel date</label>
+              <input id="bf-date" name="Travel date" type="date">
+            </div>
+            <div class="field">
+              <label for="bf-pickup">Pickup point</label>
+              <input id="bf-pickup" name="Pickup point" type="text" placeholder="Hotel / railway station / address">
+            </div>
+            <div class="field">
+              <label for="bf-circuit">Temples / circuit</label>
+              <select id="bf-circuit" name="Circuit">
+                <option>Inside Kumbakonam town</option>
+                <option>Very nearby (Darasuram, Swamimalai...)</option>
+                <option>Navagraha &ndash; nine planets</option>
+                <option>108 Divya Desams</option>
+                <option>Further afield (Mannargudi, Gangaikonda Cholapuram...)</option>
+                <option>Not sure &ndash; suggest an itinerary</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="bf-vehicle">Vehicle preference</label>
+              <select id="bf-vehicle" name="Vehicle">
+                <option>Swift / Etios A/C</option>
+                <option>Ertiga / Tavera A/C</option>
+                <option>Innova A/C</option>
+                <option>Innova Crysta A/C</option>
+                <option>Tourister Van</option>
+                <option>Tempo Traveller A/C</option>
+                <option>Not sure &ndash; recommend one</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="bf-count">Travellers</label>
+              <input id="bf-count" name="Travellers" type="number" min="1" max="30" placeholder="e.g. 4">
+            </div>
+            <div class="field full">
+              <label for="bf-notes">Notes</label>
+              <textarea id="bf-notes" name="Notes" placeholder="Early darshan timing, night halt, specific temples..."></textarea>
+            </div>
+          </div>
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary">Send booking request</button>
+            <span class="form-status" id="bf-status" role="status" aria-live="polite"></span>
+          </div>
+        </form>
+      </div>
+      <div>
+        <div class="owner-card">
+          <img src="owner.jpeg" alt="Owner of Kumbakonam Safety Travels with one of the fleet cars">
+          <p><strong>Owner-driven service</strong>Same local owner-drivers on every trip &mdash; not a rotating pool.</p>
+        </div>
+        <div class="addr">
+          <span class="mono">Kumbakonam Safety Travels</span><br>
+          422, Ganapathi Nagar 1st Street,<br>
+          Neelathanallur Road, Kumbakonam,<br>
+          Tamil Nadu
+        </div>
+        <div class="cta-actions" style="margin-top:18px;">
+          <a class="btn btn-primary" href="tel:+919443563062">Call 94435 63062</a>
+          <a class="btn btn-ghost" href="tel:+918248383192">Call 82483 83192</a>
+          <a class="btn btn-ghost" href="https://wa.me/919443563062?text=Vanakkam%2C%20I%27d%20like%20to%20book%20a%20temple%20tour%20taxi" target="_blank" rel="noopener">Message on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="trust">
+    <div class="trust-inner">
+      <a class="rating-badge" href="https://g.page/r/CbF5g-I5_sX_EBM/review" target="_blank" rel="noopener">
+        <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <span class="label"><strong>Read our reviews</strong> on Google</span>
+      </a>
+      <div class="feature-list">
+        <div class="feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/></svg>Licensed, insured vehicles</div>
+        <div class="feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a8 8 0 0 1 16 0v1"/></svg>Tamil &amp; English speaking drivers</div>
+        <div class="feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>Early darshan &amp; night-halt pickups</div>
+      </div>
+    </div>
+  </div>
+
+  <section id="circuits">
+    <div class="section-head">
+      <p class="eyebrow">The temple map</p>
+      <h2>Five circuits, every one driveable in a day</h2>
+      <p>We've grouped the temples by how far they sit from your hotel in Kumbakonam town, the way a day's itinerary actually gets planned. Open any circuit for its own map and photos.</p>
+    </div>
+
+    <div class="zone">
+      <div class="zone-inner">
+        <div class="zone-label">
+          <div class="range mono">0&ndash;2 km</div>
+          <h3>Inside Kumbakonam town</h3>
+          <div class="count mono">15 temples &middot; walkable</div>
+          <a class="pkg-link" href="package-in-town.html">View circuit &amp; map &rarr;</a>
+        </div>
+        <div>
+          <figure class="zone-photo">
+            <img src="adi-kumbeswarar.jpg" alt="Painted temple corridor at Adi Kumbeswarar Temple, Kumbakonam" loading="lazy">
+            <figcaption>Adi Kumbeswarar Temple &mdash; Kumbakonam's principal Shiva shrine, the city's namesake</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="zone">
+      <div class="zone-inner">
+        <div class="zone-label">
+          <div class="range mono">3&ndash;10 km</div>
+          <h3>Very nearby &mdash; the essentials</h3>
+          <div class="count mono">8 temples &middot; half-day run</div>
+          <a class="pkg-link" href="package-nearby.html">View circuit &amp; map &rarr;</a>
+        </div>
+        <div>
+          <figure class="zone-photo">
+            <img src="darasuram-panorama.jpg" alt="Airavatesvara Temple complex at Darasuram, pale stone courtyard" loading="lazy">
+            <figcaption>Airavatesvara Temple, Darasuram &mdash; UNESCO World Heritage Site, 4 km from town</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="zone">
+      <div class="zone-inner">
+        <div class="zone-label">
+          <div class="range mono">6&ndash;60 km</div>
+          <h3>Navagraha &mdash; the nine planets</h3>
+          <div class="count mono">9 temples &middot; our most-booked package</div>
+          <a class="pkg-link" href="package-navagraha.html">View circuit &amp; map &rarr;</a>
+        </div>
+        <div>
+          <div class="navagraha-note">Kumbakonam sits at the centre of the Navagraha belt &mdash; we run this as a single full-day A/C package, in the traditional Sun-to-Ketu order.</div>
+          <figure class="zone-photo">
+            <img src="thirunageswaram.jpg" alt="Silhouette of the Naganathar Temple gopuram at Thirunageswaram at sunset" loading="lazy">
+            <figcaption>Naganathar Temple, Thirunageswaram &mdash; the Rahu shrine, 6 km from town</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="zone">
+      <div class="zone-inner">
+        <div class="zone-label">
+          <div class="range mono">&le;15 km</div>
+          <h3>108 Divya Desams nearby</h3>
+          <div class="count mono">10 temples &middot; Vaishnavite circuit</div>
+          <a class="pkg-link" href="package-divya-desam.html">View circuit &amp; map &rarr;</a>
+        </div>
+        <div>
+          <figure class="zone-photo">
+            <img src="oppiliappan.jpg" alt="Oppiliappan Temple gopuram tower at dusk, Thiruvinnagar" loading="lazy">
+            <figcaption>Oppiliappan Temple &mdash; also called Thiruvinnagar, 6 km from town</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="zone">
+      <div class="zone-inner">
+        <div class="zone-label">
+          <div class="range mono">20&ndash;60 km</div>
+          <h3>Further afield</h3>
+          <div class="count mono">30+ temples &middot; full-day trips</div>
+          <a class="pkg-link" href="package-further.html">View circuit &amp; map &rarr;</a>
+        </div>
+        <div>
+          <figure class="zone-photo">
+            <img src="gangaikonda-front.jpg" alt="Brihadeeswara Temple tower and Nandi statue at Gangaikonda Cholapuram" loading="lazy">
+            <figcaption>Brihadeeswara Temple, Gangaikonda Cholapuram &mdash; UNESCO World Heritage Site, 42 km away</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="photo-band">
+    <img src="mahamaham-tank.jpg" alt="Mahamaham tank with temple gopurams and the town behind it, Kumbakonam" loading="lazy">
+    <p class="caption">Mahamaham tank &mdash; the sacred heart of the temple town we drive every day</p>
+  </div>
+
+  <section class="fleet-wrap">
+    <div class="section-head">
+      <p class="eyebrow">Fleet &amp; tariff</p>
+      <h2>Fixed fares, no meter surprises</h2>
+      <p>Full day covers 12 hours / 200 km, half day covers 6 hours / 100 km. Pick the car size that fits your group.</p>
+    </div>
+    <div class="fleet-gallery">
+      <figure class="fleet-photo">
+        <img src="fleet-sedan-1.jpeg" alt="Our compact sedan, parked and ready for a trip">
+        <figcaption>Compact Sedan<span>Swift / Etios A/C class</span></figcaption>
+      </figure>
+      <figure class="fleet-photo">
+        <img src="fleet-sedan-2.jpeg" alt="Our comfort sedan at pickup">
+        <figcaption>Comfort Sedan<span>A/C &middot; smooth highway ride</span></figcaption>
+      </figure>
+      <figure class="fleet-photo">
+        <img src="fleet-innova.jpeg" alt="Our Toyota Innova Crysta, ready for a group trip">
+        <figcaption>Toyota Innova Crysta<span>A/C &middot; 6&ndash;7 seater</span></figcaption>
+      </figure>
+    </div>
+    <div class="fleet-list">
+      <span class="fleet-pill">Swift / Etios A/C</span>
+      <span class="fleet-pill">Ertiga / Tavera A/C</span>
+      <span class="fleet-pill">Innova A/C</span>
+      <span class="fleet-pill">Innova Crysta A/C</span>
+      <span class="fleet-pill">Tourister Van</span>
+      <span class="fleet-pill">Tempo Traveller A/C</span>
+    </div>
+    <div class="table-scroll">
+      <table class="tariff">
+        <thead>
+          <tr>
+            <th>Vehicle</th>
+            <th class="num">Full day</th>
+            <th class="num">Half day</th>
+            <th class="num">Extra hr</th>
+            <th class="num">Extra km</th>
+            <th class="num">Thirunallar permit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="vname">Swift &amp; Etios A/C</td><td class="num">&#8377;3,600</td><td class="num">&#8377;1,800</td><td class="num">&#8377;150</td><td class="num">&#8377;14</td><td class="num">&#8377;500</td></tr>
+          <tr><td class="vname">Ertiga, Tavera A/C</td><td class="num">&#8377;5,000</td><td class="num">&#8377;2,500</td><td class="num">&#8377;200</td><td class="num">&#8377;18</td><td class="num">&#8377;800</td></tr>
+          <tr><td class="vname">Innova A/C</td><td class="num">&#8377;5,600</td><td class="num">&#8377;2,800</td><td class="num">&#8377;300</td><td class="num">&#8377;19</td><td class="num">&#8377;800</td></tr>
+          <tr><td class="vname">Innova Crysta A/C</td><td class="num">&#8377;6,600</td><td class="num">&#8377;3,300</td><td class="num">&#8377;300</td><td class="num">&#8377;20</td><td class="num">&#8377;800</td></tr>
+          <tr><td class="vname">Tourister Van</td><td class="num">&#8377;7,000</td><td class="num">&#8377;4,000</td><td class="num">&#8377;400</td><td class="num">&#8377;21</td><td class="num">&#8377;1,500</td></tr>
+          <tr><td class="vname">Tempo Traveller A/C</td><td class="num">&#8377;8,000</td><td class="num">&#8377;4,500</td><td class="num">&#8377;400</td><td class="num">&#8377;23</td><td class="num">&#8377;1,500</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="tariff-notes">
+      <div><span class="mono">Night halt</span> &mdash; &#8377;1,000 for Swift / Etios / Ertiga / Tavera / Innova / Innova Crysta, &#8377;1,500 for Tourister Van / Tempo Traveller. Above 500 km, only km charges apply.</div>
+      <div><span class="mono">Note</span> &mdash; Toll, parking and the Thirunallar temple permit are charged extra, as listed above.</div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="wrap">
+      <div class="section-head" style="margin-bottom:22px;">
+        <p class="eyebrow">Plan your route</p>
+        <h2>Every circuit, mapped</h2>
+        <p>Open a circuit to see its route on a map, which temples are on it, and real photos of the stops.</p>
+      </div>
+      <div class="pkg-grid-nav">
+        <a class="pkg-card" href="package-in-town.html">
+          <img src="adi-kumbeswarar.jpg" alt="">
+          <div class="pkg-card-body"><div class="range mono">0&ndash;2 km</div><h3>Inside town</h3></div>
+        </a>
+        <a class="pkg-card" href="package-nearby.html">
+          <img src="darasuram-panorama.jpg" alt="">
+          <div class="pkg-card-body"><div class="range mono">3&ndash;10 km</div><h3>Very nearby</h3></div>
+        </a>
+        <a class="pkg-card" href="package-navagraha.html">
+          <img src="thirunageswaram.jpg" alt="">
+          <div class="pkg-card-body"><div class="range mono">6&ndash;60 km</div><h3>Navagraha</h3></div>
+        </a>
+        <a class="pkg-card" href="package-divya-desam.html">
+          <img src="oppiliappan.jpg" alt="">
+          <div class="pkg-card-body"><div class="range mono">&le;15 km</div><h3>Divya Desams</h3></div>
+        </a>
+        <a class="pkg-card" href="package-further.html">
+          <img src="gangaikonda-front.jpg" alt="">
+          <div class="pkg-card-body"><div class="range mono">20&ndash;60 km</div><h3>Further afield</h3></div>
+        </a>
+        <a class="pkg-card" href="gallery.html">
+          <img src="mahamaham-tank.jpg" alt="">
+          <div class="pkg-card-body"><div class="range mono">All photos</div><h3>Photo gallery</h3></div>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <span class="logo-plate"><img src="logo.jpeg" alt="Kumbakonam Safety Travels logo"></span>
+  <p>Kumbakonam Safety Travels &middot; All kinds of tourist vehicles available</p>
+  <nav>
+    <a href="package-in-town.html">In town</a>
+    <a href="package-nearby.html">Nearby</a>
+    <a href="package-navagraha.html">Navagraha</a>
+    <a href="package-divya-desam.html">Divya Desams</a>
+    <a href="package-further.html">Further afield</a>
+    <a href="gallery.html">Photo gallery</a>
+  </nav>
+  <p class="tamil">நன்றி, மீண்டும் வருக &middot; &copy; 2026</p>
+  <p class="credits">Photo credits, via Wikimedia Commons: temple towers (Sarangapani Temple) &mdash; Photo by Adam Jones adamjones.freeservers.com (<a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a>); Mahamaham tank &mdash; Shanze1 (<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>); Airavatesvara Temple, Darasuram &mdash; Naveen da (<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>); Adi Kumbeswarar Temple &mdash; Vinayaraj (<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>); Naganathar Temple, Thirunageswaram &mdash; Prasannavathani.D (<a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a>); Gangaikonda Cholapuram &mdash; Ssriraman (<a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a>); Oppiliappan Temple &mdash; Ssriram mt (<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>). Map data &copy; OpenStreetMap contributors.</p>
+</footer>
+
+<script src="booking.js"></script>
+</body>
+</html>
