@@ -19,7 +19,7 @@
       <span class="brand-text">Temple-town taxi &amp; tour service</span>
     </div>
   </a>
-  <a class="header-call mono" href="tel:+919443563062">+91 94435 63062</a>
+  <a class="header-call mono" href="tel:+918248383192">+91 82483 83192</a>
 </header>
 
 <main>
@@ -34,11 +34,11 @@
   <div class="pkg-hero-text">
     <p class="eyebrow">6&ndash;60 km &middot; our most-booked package</p>
     <h1>Navagraha &mdash; the nine planets</h1>
-    <p>Kumbakonam sits at the centre of the Navagraha belt. We run all nine shrines as a single full-day A/C trip, visited in the traditional Sun-to-Ketu order.</p>
+    <p>Kumbakonam sits at the centre of the Navagraha belt. We run all nine shrines as a single full-day A/C trip, visited in our usual driving order: Moon, Jupiter, Rahu, Sun, Venus, Mars, Mercury, Ketu, Saturn.</p>
   </div>
 
   <div class="pkg-stats">
-    <div class="stat"><b class="mono">9</b><span>Temples, Sun to Ketu</span></div>
+    <div class="stat"><b class="mono">9</b><span>Temples, all nine planets</span></div>
     <div class="stat"><b class="mono">8</b><span>Mapped below</span></div>
     <div class="stat"><b class="mono">6&ndash;60</b><span>Km from town centre</span></div>
   </div>
@@ -46,19 +46,19 @@
   <section>
     <div class="section-head">
       <p class="eyebrow">Route map</p>
-      <h2>The nine planets, in ritual order</h2>
-      <p>Numbered in the traditional Sun&rarr;Moon&rarr;Mars&rarr;Mercury&rarr;Jupiter&rarr;Venus&rarr;Saturn&rarr;Rahu&rarr;Ketu sequence &mdash; the order pilgrims visit them in, not necessarily the shortest drive.</p>
+      <h2>The nine planets, in our driving order</h2>
+      <p>Numbered Moon&rarr;Jupiter&rarr;Rahu&rarr;Sun&rarr;Venus&rarr;Mars&rarr;Mercury&rarr;Ketu&rarr;Saturn &mdash; the order we actually run this circuit in, not the traditional ritual sequence.</p>
     </div>
     <div class="map-card">
       <div id="map"></div>
-      <div class="map-legend"><span class="dot">8</span> numbered temples are mapped below in ritual order.</div>
+      <div class="map-legend"><span class="dot">8</span> numbered temples are mapped below in this order; Ketu follows Mercury on the drive but isn't pinned yet.</div>
     </div>
 
     <div class="temple-list">
       <h3>Mapped, in order</h3>
       <div class="temple-rows" id="mapped-rows"></div>
 
-      <p class="unpinned-note">Also in this circuit (not yet individually pinned):</p>
+      <p class="unpinned-note">Also in this circuit (not yet individually pinned) &mdash; visited 8th, between Mercury and Saturn:</p>
       <p class="also-list">Naganathaswamy Temple, Keezhaperumpallam (Ketu &middot; 60 km).</p>
     </div>
 
@@ -91,14 +91,14 @@
 <script src="map.js"></script>
 <script>
   var points = [
-    { name: "Sooriyanar Koil (Sun)", lat: 11.02972, lon: 79.47778, note: "Thirumangalakudi · 15 km" },
     { name: "Kailasanathar Temple (Moon)", lat: 10.88667, lon: 79.12556, note: "Thingalur · 35 km" },
+    { name: "Apatsahayesvarar Temple (Jupiter)", lat: 10.84923, lon: 79.15880, note: "Alangudi · 17 km" },
+    { name: "Naganathar Temple (Rahu)", lat: 10.96667, lon: 79.45000, note: "Thirunageswaram · 6 km" },
+    { name: "Sooriyanar Koil (Sun)", lat: 11.02972, lon: 79.47778, note: "Thirumangalakudi · 15 km" },
+    { name: "Agneeswarar Temple (Venus)", lat: 11.04478, lon: 79.49345, note: "Kanjanur · 18 km" },
     { name: "Vaitheeswaran Koil (Mars)", lat: 11.19500, lon: 79.71417, note: "49 km" },
     { name: "Swetharanyeswarar Temple (Mercury)", lat: 11.17370, lon: 79.81050, note: "Thiruvenkadu · 60 km" },
-    { name: "Apatsahayesvarar Temple (Jupiter)", lat: 10.84923, lon: 79.15880, note: "Alangudi · 17 km" },
-    { name: "Agneeswarar Temple (Venus)", lat: 11.04478, lon: 79.49345, note: "Kanjanur · 18 km" },
-    { name: "Dharbaranyeswarar Temple (Saturn)", lat: 10.92640, lon: 79.79200, note: "Thirunallar · 52 km" },
-    { name: "Naganathar Temple (Rahu)", lat: 10.96667, lon: 79.45000, note: "Thirunageswaram · 6 km" }
+    { name: "Dharbaranyeswarar Temple (Saturn)", lat: 10.92640, lon: 79.79200, note: "Thirunallar · 52 km" }
   ];
   renderTempleMap("map", points);
   var rowsHtml = points.map(function(p, i){
