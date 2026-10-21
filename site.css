@@ -172,6 +172,17 @@ footer.site .credits a{ color:inherit; }
 .review-foot a{ font-family:"Oswald",sans-serif; font-size:0.82rem; letter-spacing:0.04em; text-transform:uppercase; color:var(--accent); text-decoration:none; border-bottom:1px solid currentColor; padding-bottom:2px; }
 .review-foot a:hover{ color:var(--maroon); }
 
+/* ---------- services ---------- */
+.services-grid{ max-width:1080px; margin:0 auto; display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+@media (max-width:860px){ .services-grid{ grid-template-columns:1fr; } }
+.service-card{ background:var(--surface); border:1px solid var(--line-light); border-radius:14px; padding:26px; }
+.service-card .service-icon{ width:40px; height:40px; border-radius:10px; background:var(--primary-deep); color:#fff; display:flex; align-items:center; justify-content:center; margin-bottom:16px; }
+.service-card .service-icon svg{ width:20px; height:20px; }
+.service-card h3{ font-size:1.08rem; margin-bottom:8px; }
+.service-card p{ color:var(--ink-soft); font-size:0.92rem; line-height:1.6; margin:0; }
+.service-card .service-cta{ display:inline-flex; align-items:center; gap:6px; margin-top:14px; font-family:"Oswald",sans-serif; font-size:0.78rem; letter-spacing:0.04em; text-transform:uppercase; color:var(--accent); text-decoration:none; border-bottom:1px solid currentColor; padding-bottom:2px; }
+.service-card .service-cta:hover{ color:var(--maroon); }
+
 /* ---------- section shell ---------- */
 section{ padding-block:60px; }
 .section-head{ max-width:1080px; margin-inline:auto; margin-bottom:30px; }
