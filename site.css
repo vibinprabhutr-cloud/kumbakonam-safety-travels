@@ -159,6 +159,19 @@ footer.site .credits a{ color:inherit; }
 .feature{ display:flex; align-items:center; gap:8px; font-size:0.88rem; color:var(--ink-soft); }
 .feature svg{ width:16px; height:16px; color:var(--primary); flex:none; }
 
+/* ---------- reviews ---------- */
+.review-grid{ max-width:1080px; margin:0 auto; display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+@media (max-width:860px){ .review-grid{ grid-template-columns:1fr; } }
+.review-card{ background:var(--surface); border:1px solid var(--line-light); border-radius:14px; padding:22px; display:flex; flex-direction:column; gap:12px; margin:0; }
+.review-stars{ color:var(--gold-soft); font-size:0.9rem; letter-spacing:2px; }
+.review-card blockquote{ margin:0; font-size:0.93rem; line-height:1.65; color:var(--ink-soft); flex:1; display:-webkit-box; -webkit-line-clamp:9; -webkit-box-orient:vertical; overflow:hidden; }
+.review-card figcaption{ display:flex; align-items:baseline; justify-content:space-between; gap:10px; font-family:"Oswald",sans-serif; font-size:0.85rem; flex-wrap:wrap; }
+.review-card figcaption strong{ font-weight:500; color:var(--on-light); }
+.review-card figcaption span{ color:var(--ink-faint); font-size:0.75rem; letter-spacing:0.02em; }
+.review-foot{ max-width:1080px; margin:22px auto 0; text-align:center; }
+.review-foot a{ font-family:"Oswald",sans-serif; font-size:0.82rem; letter-spacing:0.04em; text-transform:uppercase; color:var(--accent); text-decoration:none; border-bottom:1px solid currentColor; padding-bottom:2px; }
+.review-foot a:hover{ color:var(--maroon); }
+
 /* ---------- section shell ---------- */
 section{ padding-block:60px; }
 .section-head{ max-width:1080px; margin-inline:auto; margin-bottom:30px; }
